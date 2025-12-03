@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    border: 0;
+    margin: 0;
+    // font-family: Nunito, Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+// Encabezado
+
+header{
+    height: auto;
+    padding-bottom: 5rem;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+
+    background: linear-gradient(0deg, #1269b5de, #060841d3), url(../img/backgrounds/nuc_caracas.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    // Banner del gobierno
+
+    .banner-gobierno{
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        gap: 10px;
+        padding: 5px;
+        height: max-content;
+
+        backdrop-filter: blur(4px);
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        .seccion1, .seccion2, .seccion3{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 90%;
+            color: #ffffff;
+        }
+        
+        .seccion1{
+            font-size: 14px;
+        }
+        
+        .seccion1, .seccion2{
+            padding-right: 10px;
+            border-right: 1px solid #ffffff;
+        }
+
+        .seccion2, .seccion3{
+            font-size: 12px;
+        }
+
+        img{
+            width: auto;
+            height: 40px;        
+        }
+        
+        @media (max-width: 900px) {
+
+            .seccion1{
+                font-size: 12px;
+            }
+            
+            .seccion2, .seccion3{
+                font-size: 10px;
+            }
+
+            img{
+                width: auto;
+                height: 20px;        
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .seccion1{
+                font-size: 8px;
+            }
+            
+            .seccion2, .seccion3{
+                font-size: 6px;
+            }
+
+            img{
+                width: auto;
+                height: 15px;        
+            }
+
+        }
+
+    }
+
+    // Barra de navegación
+
+    .barra-navegacion{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 10px 20px 10px 10px;
+        border-radius: 50px;
+
+        font-family: Nunito, Arial, Helvetica, sans-serif;
+        
+        .logotipo-unefa{
+            height: 20px;
+        }
+        
+        .lista-enlaces{
+            display: flex;
+            gap: 20px;
+            list-style: none;
+
+            li {
+                border-bottom: solid 2px transparent;
+                transition: all 0.3s ease;
+                align-content: center;
+                white-space: nowrap;
+                
+                &:hover{
+                    border-bottom: solid 2px #1172c7de;
+                    transform: scale(1.05);
+                }
+
+                &:active{
+                    border-bottom: solid 2px #042b50de;
+                    transform: scale(1);
+                }
+
+                a {
+                    color:#ffffff;
+                    text-decoration: none;    
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 900px) {
+        
+        .barra-navegacion{
+            
+            .lista-enlaces{
+                display: none;
+            }
+        }
+        
+    }
+    
+    @media (max-width: 600px) {
+
+        .barra-navegacion{
+            .logotipo-unefa{
+                height: 10px;
+            }
+        }
+
+    }
+    // Sección principal
+
+    .seccion-principal{
+        display: grid;
+        grid-template-columns: 33% 1fr;
+        align-items: center;
+        color: #ffffff;
+
+        .escudo-unefa{
+            display: flex;
+            justify-content: end;
+
+            img{
+                height: 400px;
+                
+            }
+        }
+
+        .texto{
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 20px;
+
+            .nombre-universidad{
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                font-size: 40px;
+
+                b{
+                    font-weight: 500;
+                }
+            }
+
+            p{
+                font-family: Nunito, Arial, Helvetica, sans-serif;
+            }
+
+            .botones{
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 20px;
+                font-family: Nunito, Arial, Helvetica, sans-serif;
+                
+                
+                .boton-NU{
+                    padding: 15px;
+                    border-radius: 12px;
+                    font-size: 16px;
+                    background: linear-gradient(45deg, #0764b6de, #2d99f8de);
+                    font-weight: 600;
+                    color: #ffffff;
+                    cursor: pointer;
+                    transition: all 0.4s ease;
+                    
+                    &:hover{
+                        transform: scale(1.05) translateY(-5px);
+                        box-shadow: 0px 15px 30px #16161670;
+                    }
+
+                    &:active{
+                        transform: scale(1) translateY(0px);
+                        box-shadow: 0px 0px 0px #16161670;
+                    }
+
+                }
+                
+                .boton-APM{
+                    padding: 15px;
+                    border-radius: 12px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #ffffff;
+                    background-color: transparent;
+                    border: solid 4px #ffffffde;
+                    cursor: pointer;
+                    transition: all 0.4s ease;
+
+                    &:hover{
+                        transform: scale(1.05) translateY(-5px);
+                        box-shadow: 0px 15px 30px #16161670;
+                    }
+
+                    &:active{
+                        transform: scale(1) translateY(0px);
+                        box-shadow: 0px 0px 0px #16161670;
+                    }
+                }
+
+            }
+
+
+
+        }
+
+        @media (max-width: 900px) {
+            display: flex;
+            flex-flow: column nowrap;
+            align-content: center;
+            justify-content: center;
+            color: #ffffff;
+            text-align: center;
+
+            .escudo-unefa{
+                img{
+                    height: 200px;
+                }
+            }
+
+            .texto{
+
+                .nombre-universidad{
+                    font-size: 12px;
+                }
+
+                p{
+                    font-size: 8px;
+                }
+
+                .botones{
+                    .boton-APM, .boton-NU{
+                        padding: 10px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .escudo-unefa{
+                img{
+                    height: 100px;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .texto{
+
+                .nombre-universidad{
+                    font-size: 20px;
+                }
+
+
+
+                .botones{
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+// Main
+
+main {
+
+    display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
+
+    .banner-publicidad{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+        padding: 10% 0;
+        width: 100%;
+
+        .cinta{
+            width: 100%;
+            height: 100px;
+            z-index: 1;
+            overflow: hidden;
+
+            background-image: url(../img/banner-publicidad/cinta.svg);
+            background-repeat: repeat-x;
+            background-position: center center;
+        }
+        
+        img{
+            z-index: 2;
+            position: absolute;
+            border-radius: 23px;
+            background: #e0e0e0;
+            box-shadow:  0px 17px 30px #5c5c5ce0;
+            max-width: 80%;
+        }
+
+        @media (max-width: 600px) {
+            padding: 5% 0;
+        }
+
+
+
+
+    }
+
+    .actualidad{
+        display: flex;
+        gap: 20px;
+        flex-flow: column nowrap;
+        overflow-x: hidden;
+        font-family: Nunito, Arial, Helvetica, sans-serif;
+        align-items: center;
+        padding-bottom: 100px;
+
+
+        h2{
+            text-align: center;
+            font-size: 50px;
+            font-weight: 400;
+            letter-spacing: 10px;
+            z-index: 2;
+        
+        @media (max-width: 900px) {
+            font-size: 30px;
+        }
+        
+        
+        }
+
+        .carrusel{
+            width: 90%;
+            max-width: 120em;
+            overflow-x: hidden;
+
+            border-radius: 24px;
+            background: #e0e0e0;
+            box-shadow:  26px 26px 77px #a6a6a6,
+                        -26px -26px 77px #ffffff;
+
+            .contenedor-imagen{
+                width: 300%;
+                background-color: orange;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+            }
+
+            img{
+                width: calc(100% / 3);
+                height: auto;
+                background-color: limegreen;
+            }
+
+            .puntos{
+                width: 100%;
+                height: max-content;
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .punto{
+                height: 2em;
+                width: 2em;
+                background-color: black;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+
+
+
+        }
+
+    }
+
+    .botones-informativos{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        font-family: Nunito, Arial, Helvetica, sans-serif;
+
+
+
+        .tarjeta{
+            height: 100%;
+            width: 300px;
+            background: linear-gradient(0deg, #1269b5de, #060841d3), url(../img/backgrounds/nuc_caracas.jpg);
+
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            border-radius: 20px;
+            padding: 1rem;
+            color: #ffffff;
+
+            .texto{
+                display: flex;
+                flex-flow: column nowrap;
+            
+                a{
+                    text-decoration: none;
+                    color: #1269b5;
+                    font-weight: 700;
+                    background-color: #ffffff;
+                    width: max-content;
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                    margin-top: 10px;
+                }
+            
+                svg{
+                    width: 32px;
+                }
+
+
+            }
+        }
+    
+    }
+
+    @media (max-width: 1000px) {
+        .botones-informativos{
+            flex-flow: column nowrap;
+            
+            .tarjeta{
+                width: 90%;
+            }
+    
+    
+    
+    
+        }
+    
+    }
+}
+
+/// Pie de página
+
+footer{
+
+    img{
+        height: 10px;
+    }
+
+
+}
