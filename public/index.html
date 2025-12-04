@@ -46,13 +46,11 @@
             </div>
             <div class="texto">
                 <h1 class="nombre-universidad">
-                    <b>U</b>NIVERSIDAD <b>N</b>ACIONAL <b>E</b>XPERIMENTAL <b>P</b>OLITÉCNICA <br>
+                    <b>U</b>NIVERSIDAD <b>N</b>ACIONAL <b>E</b>XPERIMENTAL <b>P</b>OLITÉCNICA<br>
                     DE LA <b>F</b>UERZA <b>A</b>RMADA
                 </h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus labore <br>
-                    architecto tempore odio reiciendis aliquam culpa tempora neque! Iusto, harum nemo? <br>
-                    Debitis doloribus rerum cumque incidunt iure maxime fugit?
+                    Formando ciudadanos profesionales para la defensa integral y el desarrollo de la nación.
                 </p>
                 <div class="botones">
                     <button class="boton-NU"><a>¡NUESTRA UNIVERSIDAD!</a></button>
@@ -83,11 +81,11 @@
                     <img src="../img/carrusel/info-OPSU.png" alt="Imagen 2">
                     <img src="../img/carrusel/info-HORARIO.png" alt="Imagen 1">
                 </div>
-                <div class="puntos">
-                    <div class="punto"></div>
-                    <div class="punto"></div>
-                    <div class="punto"></div>
-                </div>
+                <ul class="puntos">
+                    <li class="punto"></li>
+                    <li class="punto"></li>
+                    <li class="punto"></li>
+                </ul>
     
             </div>
         </section>
@@ -128,43 +126,35 @@
             </div>
         </section>
 
-        <section class="libreria">\
-            <h2>Nuestra <b>Librería</b></h2>
-            <p></p>
-            <div class="burbujas">
-                <div>
-                    <label for="burbuja">12345</label>
-                    <label for="burbuja">1278313123</label>
-                    <label for="burbuja">1231</label>
-                </div>
-                <div>
-                    <label for="burbuja">12345123123123</label>
-                    <label for="burbuja">12783</label>
-                    <label for="burbuja">12311231</label>
-                </div>
-                <div>
-                    <label for="burbuja">12345123</label>
-                    <label for="burbuja">1278313123</label>
-                    <label for="burbuja">12</label>
-                </div>
-                <div>
-                    <label for="burbuja">12345123</label>
-                    <label for="burbuja">1278313123</label>
-                    <label for="burbuja">1212331</label>
-                </div>
-            </div>
-        </section>
+<section class="libreria">
+    <div class="texto">
+        <h2>Nuestra <span class="resaltado">Librería</span></h2> 
+        <p>
+            Accede a nuestra colección completa de recursos académicos.
+            Encuentra apuntes, libros y material de apoyo organizados por materia para potenciar tu estudio.
+        </p>  
+        <a href="#">Visitar Librería</a>  
+    </div>
+    
+    <div class="burbujas">
+        <div class="burbujas-contenido">
+            <label for="burbuja" class="solid">Artículos Científicos</label>
+            <label for="burbuja" class="solid">Civil</label>
+            <label for="burbuja" class="border">Electricidad</label>
+            <label for="burbuja" class="solid">Bases de Datos</label>
+            <label for="burbuja" class="border">Física</label>
+            <label for="burbuja" class="solid">3D</label>
+            <label for="burbuja" class="border">Linux</label>
+            <label for="burbuja" class="solid">Matemáticas</label>
+            <label for="burbuja" class="solid">Mecánica</label>
+            <label for="burbuja" class="border">Telecomunicaciones</label>
+            <label for="burbuja" class="solid">Control de Calidad</label>
+            <label for="burbuja" class="border">Classroom</label>
+        </div>
+    </div>
+</section>
 
-        <section class="asobies">
-
-            <div class="banner-asobies">
-                <img src="#" alt="bannner-asobies">
-            </div>
-            <h2>ASOBIES</h2>
-            <p></p>
-        </section>
-
-        <section class="heroes">
+        <!-- <section class="heroes">
             <div class="tarjeta">
                 <img src="#" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -189,17 +179,46 @@
                 </p>
                 <a href=""></a>
             </div>
-        </section>
+        </section> -->
         
     </main>
-    
-    <footer>
-        <img src="../img/logo/unefa_escudo.png" alt="unefa_escudo">
-        <span>UNEFA</span>
 
-        <div class="secciones">
+<footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                
+                <div class="footer-col">
+                    <h4>Nuestra universidad</h4>
+                    <p>Institución de educación superior venezolana, de carácter público y experimental.
+                        Su misión principal es la formación integral de profesionales con un fuerte compromiso ético y patriótico, 
+                        orientados al desarrollo integral y la defensa de la nación.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Universidad</a></li>
+                        <li><a href="#">SICEU</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p> Todos los logos en este sitio son propiedad, y están registrados, por sus respectivos dueños. <br>
+Todo lo demás tiene Derechos de Propiedad © 2013-2025 por la Universidad Nacional Experimental Politécnica de la Fuerza Armada</p>
+            </div>
         </div>
-
     </footer>
 </body>
 </html>
