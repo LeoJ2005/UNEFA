@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  border: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8784313725), rgba(255, 255, 255, 0.8980392157)), url(../img/backgrounds/nuc_caracas.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  height: auto;
+  display: grid;
+  grid-template-rows: auto auto;
+  background: linear-gradient(0deg, rgba(18, 105, 181, 0.8705882353), rgba(6, 8, 65, 0.8274509804)), url(../img/backgrounds/nuc_caracas.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header .difuminado {
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+header .banner-gobierno {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: 10px;
+  padding: 5px;
+  height: -moz-max-content;
+  height: max-content;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header .banner-gobierno .seccion1, header .banner-gobierno .seccion2, header .banner-gobierno .seccion3 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 90%;
+  color: #ffffff;
+}
+header .banner-gobierno .seccion1 {
+  font-size: 14px;
+}
+header .banner-gobierno .seccion1, header .banner-gobierno .seccion2 {
+  padding-right: 10px;
+  border-right: 1px solid #ffffff;
+}
+header .banner-gobierno .seccion2, header .banner-gobierno .seccion3 {
+  font-size: 12px;
+}
+header .banner-gobierno img {
+  width: auto;
+  height: 40px;
+}
+@media (max-width: 900px) {
+  header .banner-gobierno .seccion1 {
+    font-size: 12px;
+  }
+  header .banner-gobierno .seccion2, header .banner-gobierno .seccion3 {
+    font-size: 10px;
+  }
+  header .banner-gobierno img {
+    width: auto;
+    height: 20px;
+  }
+}
+@media (max-width: 600px) {
+  header .banner-gobierno .seccion1 {
+    font-size: 8px;
+  }
+  header .banner-gobierno .seccion2, header .banner-gobierno .seccion3 {
+    font-size: 6px;
+  }
+  header .banner-gobierno img {
+    width: auto;
+    height: 15px;
+  }
+}
+header .barra-navegacion {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 10px 20px 10px 10px;
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+}
+header .barra-navegacion .logotipo-unefa {
+  height: 20px;
+}
+header .barra-navegacion .lista-enlaces {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+header .barra-navegacion .lista-enlaces li {
+  border-bottom: solid 2px transparent;
+  transition: all 0.3s ease;
+  align-content: center;
+  white-space: nowrap;
+}
+header .barra-navegacion .lista-enlaces li:hover {
+  border-bottom: solid 2px rgba(17, 114, 199, 0.8705882353);
+  transform: scale(1.05);
+}
+header .barra-navegacion .lista-enlaces li:active {
+  border-bottom: solid 2px rgba(4, 43, 80, 0.8705882353);
+  transform: scale(1);
+}
+header .barra-navegacion .lista-enlaces li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+@media (max-width: 900px) {
+  header .barra-navegacion .lista-enlaces {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  header .barra-navegacion .logotipo-unefa {
+    height: 10px;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column nowrap;
+  justify-content: center;
+  padding: 4rem;
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+}
+main .login-section {
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  padding: 50px;
+  border-radius: 50px;
+}
+main .login-section h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 20px;
+  letter-spacing: 10px;
+}
+main .login-section form {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 500px;
+  padding: 40px 40px;
+  border-radius: 20px;
+  background: linear-gradient(0deg, rgba(4, 121, 231, 0.8705882353), rgba(6, 80, 216, 0.8274509804));
+  box-shadow: 35px 35px 70px #bebebe, -35px -35px 70px #ffffff;
+  color: #ffffff;
+}
+main .login-section form label {
+  display: inline-block;
+  text-align: left;
+  font-size: 20px;
+}
+main .login-section form input {
+  height: 20px;
+  font-size: 18px;
+  border: 2px solid rgba(21, 18, 189, 0.1);
+  border-radius: 15px;
+  margin-bottom: 40px;
+  padding: 8px 20px;
+}
+main .login-section form div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+}
+main .login-section form div button {
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 16px;
+  width: 50%;
+  background-color: #ffffff;
+  font-weight: 600;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+main .login-section .mensaje {
+  display: none;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: #000000;
+  color: #ffffff;
+  margin-top: 20px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.footer {
+  background-color: #24262b;
+  padding: 20px 0;
+  color: #ffffff;
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.footer .footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+@media (max-width: 900px) {
+  .footer .footer-bottom {
+    text-align: center;
+    width: 80%;
+    font-size: 8px;
+  }
+}/*# sourceMappingURL=login.css.map */

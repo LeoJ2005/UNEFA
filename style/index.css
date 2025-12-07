@@ -530,26 +530,22 @@ main .libreria .solid:hover, main .libreria .border:hover {
   color: #ffffff;
   font-family: Nunito, Arial, Helvetica, sans-serif;
 }
-
-.container {
+.footer .container {
   max-width: 1170px;
   margin: auto;
   padding: 0 15px;
 }
-
-.footer-row {
+.footer .footer-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-.footer-col {
+.footer .footer-col {
   width: 30%;
   padding: 0 15px;
   margin-bottom: 30px;
 }
-
-.footer-col h4 {
+.footer .footer-col h4 {
   font-size: 18px;
   color: #ffffff;
   text-transform: capitalize;
@@ -557,8 +553,7 @@ main .libreria .solid:hover, main .libreria .border:hover {
   font-weight: 500;
   position: relative;
 }
-
-.footer-col h4::before {
+.footer .footer-col h4::before {
   content: "";
   position: absolute;
   left: 0;
@@ -568,22 +563,18 @@ main .libreria .solid:hover, main .libreria .border:hover {
   box-sizing: border-box;
   width: 50px;
 }
-
-.footer-col p {
+.footer .footer-col p {
   font-size: 15px;
   color: #bbbbbb;
   font-weight: 300;
 }
-
-.footer-col ul {
+.footer .footer-col ul {
   list-style: none;
 }
-
-.footer-col ul li:not(:last-child) {
+.footer .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
-
-.footer-col ul li a {
+.footer .footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
   color: #ffffff;
@@ -593,13 +584,11 @@ main .libreria .solid:hover, main .libreria .border:hover {
   display: block;
   transition: all 0.3s ease;
 }
-
-.footer-col ul li a:hover {
+.footer .footer-col ul li a:hover {
   color: #ffffff;
   padding-left: 8px;
 }
-
-.social-links a {
+.footer .social-links a {
   display: inline-block;
   height: 40px;
   width: 40px;
@@ -611,30 +600,27 @@ main .libreria .solid:hover, main .libreria .border:hover {
   color: #ffffff;
   transition: all 0.5s ease;
 }
-
-.social-links a:hover {
+.footer .social-links a:hover {
   color: #24262b;
   background-color: #ffffff;
 }
-
-.footer-bottom {
+.footer .footer-bottom {
   text-align: center;
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin-top: 20px;
 }
-
 @media (max-width: 767px) {
-  .footer-col {
+  .footer .footer-col {
     width: 100%;
     margin-bottom: 30px;
     text-align: center;
   }
-  .footer-col h4::before {
+  .footer .footer-col h4::before {
     left: 50%;
     transform: translateX(-50%);
   }
-  .social-links {
+  .footer .social-links {
     display: flex;
     justify-content: center;
   }
