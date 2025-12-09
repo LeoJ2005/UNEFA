@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   border: 0;
   margin: 0;
@@ -135,64 +136,114 @@ header .barra-navegacion .lista-enlaces li a {
 
 main {
   display: flex;
-  flex-direction: column nowrap;
+  flex-flow: row nowrap;
   justify-content: center;
   padding: 4rem;
-  font-family: Nunito, Arial, Helvetica, sans-serif;
+  font-family: Poppins, Nunito, Arial, Helvetica, sans-serif;
 }
 main .login-section {
   display: flex;
   flex-flow: column;
-  align-content: center;
   padding: 50px;
-  border-radius: 50px;
 }
 main .login-section h2 {
   text-align: center;
+  font-weight: 300;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+main .login-section hr {
+  height: 2px;
+  border-radius: 10px;
+  background-color: rgba(6, 80, 216, 0.8274509804);
+  margin: 10px 0;
+}
+main .login-section h3 {
+  text-align: center;
   font-weight: 400;
-  font-size: 40px;
-  margin-bottom: 20px;
-  letter-spacing: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
 }
 main .login-section form {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
   width: 500px;
-  padding: 40px 40px;
+  padding: 40px 40px 20px 40px;
   border-radius: 20px;
   background: linear-gradient(0deg, rgba(4, 121, 231, 0.8705882353), rgba(6, 80, 216, 0.8274509804));
-  box-shadow: 35px 35px 70px #bebebe, -35px -35px 70px #ffffff;
+  box-shadow: 35px 35px 70px #acabab, -35px -35px 70px #cecece;
   color: #ffffff;
 }
-main .login-section form label {
-  display: inline-block;
-  text-align: left;
+main .login-section form .opcion {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+main .login-section form .opcion div {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 5px;
+}
+main .login-section form .opcion div label {
   font-size: 20px;
 }
-main .login-section form input {
+main .login-section form .opcion div .icon {
+  height: 20px;
+  filter: invert(100%);
+}
+main .login-section form .opcion input {
   height: 20px;
   font-size: 18px;
   border: 2px solid rgba(21, 18, 189, 0.1);
   border-radius: 15px;
   margin-bottom: 40px;
-  padding: 8px 20px;
-}
-main .login-section form div {
+  padding: 2% 10% 2% 5%;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  width: 100%;
 }
-main .login-section form div button {
+main .login-section form .opcion #togglePassword {
+  position: absolute;
+  right: 15px;
+  top: 47%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+}
+main .login-section form button {
   padding: 10px;
   border-radius: 12px;
-  font-size: 16px;
+  font-size: 20px;
   width: 50%;
   background-color: #ffffff;
   font-weight: 600;
   color: #000000;
   cursor: pointer;
   transition: all 0.4s ease;
+}
+main .login-section form .opciones-adicionales {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+}
+main .login-section form .opciones-adicionales a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.4s ease;
+}
+main .login-section form .opciones-adicionales a:hover {
+  transform: translateY(-4px);
+  color: #ffd903;
+  text-shadow: 0px 2px 10px #161616;
+}
+main .login-section form .opciones-adicionales a:active {
+  transform: translateY(0px);
+  color: #ffffff;
+  text-shadow: none;
 }
 main .login-section .mensaje {
   display: none;

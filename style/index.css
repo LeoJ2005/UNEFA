@@ -304,6 +304,7 @@ main .actualidad .carrusel .contenedor-imagen {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
+  transform: translateX(-33.33%);
 }
 main .actualidad .carrusel img {
   width: 33.3333333333%;
@@ -344,7 +345,7 @@ main .actualidad .carrusel .punto:active {
     width: 1em;
   }
 }
-main .actualidad .carrusel .punto-activo {
+main .actualidad .carrusel .punto.activo {
   height: 1.5em;
   width: 1.5em;
   border-radius: 50%;
@@ -354,7 +355,7 @@ main .actualidad .carrusel .punto-activo {
   background: #0a7ce0;
 }
 @media (max-width: 900px) {
-  main .actualidad .carrusel .punto-activo {
+  main .actualidad .carrusel .punto.activo {
     height: 1em;
     width: 1em;
   }
