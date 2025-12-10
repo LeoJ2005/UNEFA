@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/seccion.css">
+    <link rel="stylesheet" href="../../style/materias.css">
 </head>
 <body>
 
@@ -65,6 +66,7 @@
                 
                 <span>Semestre:</span>
                 <select name="semestre" id="semestre">
+                    <option value="0">Todas</option>
                     <option value="1">1 semestre</option>
                     <option value="2">2 semestre</option>
                     <option value="3">3 semestre</option>
@@ -74,6 +76,42 @@
                     <option value="7">7 semestre</option>
                     <option value="8">8 semestre</option>
                 </select>
+
+                <table class="tabla-materias">
+                    <thead>
+                        <tr>
+                            <th>Semestre</th>
+                            <th>Código</th>
+                            <th>Materia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row">
+                            <td>01</td>
+                            <td>MAT-0102</td>
+                            <td>Matemáticas I</td>
+                        </tr>
+
+                        <tr class="row">
+                            <td>01</td>
+                            <td>FIS-0304</td>
+                            <td>Física I</td>
+                        </tr>
+
+                        <tr class="row">
+                            <td>01</td>
+                            <td>MAT-0206</td>
+                            <td>Geometria analítica</td>
+                        </tr>
+
+                        <tr class="row">
+                            <td>01</td>
+                            <td>POG-0305</td>
+                            <td>Programación 1</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
 
             </div>
         </section>

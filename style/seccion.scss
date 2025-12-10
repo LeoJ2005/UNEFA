@@ -273,24 +273,6 @@ main {
 
 
         }
-
-        .dashboard{
-            width: 100%;
-            display: flex;
-            flex-flow: row wrap;
-            gap: 20px;
-            
-            .target{
-                width: calc(100% / 3 - 20px);
-                height: 200px;
-                background-color: #24262b;
-                border-radius: 10px;
-            }
-
-
-
-
-        }
     }
 }
 

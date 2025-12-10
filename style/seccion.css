@@ -212,18 +212,6 @@ main .pizarra .seccion div {
   justify-content: space-between;
   font-size: 20px;
 }
-main .pizarra .dashboard {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  gap: 20px;
-}
-main .pizarra .dashboard .target {
-  width: calc(33.3333333333% - 20px);
-  height: 200px;
-  background-color: #24262b;
-  border-radius: 10px;
-}
 
 .footer {
   background-color: #24262b;
