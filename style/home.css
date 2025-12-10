@@ -218,11 +218,179 @@ main .pizarra .dashboard {
   flex-flow: row wrap;
   gap: 20px;
 }
-main .pizarra .dashboard .target {
-  width: calc(33.3333333333% - 20px);
+main .pizarra .dashboard .target-vs {
+  width: calc(16.665% - 60px);
   height: 200px;
-  background-color: #24262b;
+  background-color: rgba(18, 105, 181, 0.8705882353);
   border-radius: 10px;
+  color: #ffffff;
+  transition: all 0.4s ease;
+}
+main .pizarra .dashboard .target-vs:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(22, 22, 22, 0.5019607843);
+}
+main .pizarra .dashboard .target-s {
+  width: calc(33.33% - 60px);
+  height: 200px;
+  background-color: rgba(11, 48, 170, 0.8705882353);
+  color: #ffffff;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+main .pizarra .dashboard .target-s:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(22, 22, 22, 0.5019607843);
+}
+main .pizarra .dashboard .target-b {
+  width: calc(66.66% - 60px);
+  height: 200px;
+  background-color: #7b9ef5;
+  color: #000000;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+main .pizarra .dashboard .target-b:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(22, 22, 22, 0.5019607843);
+}
+main .pizarra .dashboard .target-record {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+main .pizarra .dashboard .target-record .texto-target h3 {
+  font-size: 36px;
+}
+main .pizarra .dashboard .target-record .boton-target {
+  display: flex;
+  justify-content: end;
+}
+main .pizarra .dashboard .target-record .boton-target a {
+  color: #ffffff;
+  text-decoration: none;
+  background: #2c65f3;
+  border-radius: 8px;
+  padding: 20px;
+}
+main .pizarra .dashboard .target-carnet {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+main .pizarra .dashboard .target-carnet .texto-target h3 {
+  font-size: 30px;
+  text-align: center;
+}
+main .pizarra .dashboard .target-carnet .texto-target span {
+  text-align: center;
+  display: block;
+}
+main .pizarra .dashboard .target-carnet .boton-target {
+  display: flex;
+  justify-content: center;
+}
+main .pizarra .dashboard .target-carnet .boton-target a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  background: #2ca3f3;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+main .pizarra .dashboard .target-solicitudes {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+main .pizarra .dashboard .target-solicitudes .texto-target h3 {
+  font-size: 30px;
+  text-align: center;
+}
+main .pizarra .dashboard .target-solicitudes .texto-target span {
+  text-align: center;
+  display: block;
+}
+main .pizarra .dashboard .target-solicitudes .boton-target {
+  display: flex;
+  justify-content: center;
+}
+main .pizarra .dashboard .target-solicitudes .boton-target a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  background: #2ca3f3;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+main .pizarra .dashboard .target-siceu {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(rgba(0, 132, 255, 0.3764705882), rgba(0, 132, 255, 0.3764705882)), url(../img/backgrounds/7pk73likiz5klibolih32l7as8n65qb8.jpg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+main .pizarra .dashboard .target-siceu .texto-target h3 {
+  font-size: 50px;
+  text-align: center;
+}
+main .pizarra .dashboard .target-siceu .texto-target span {
+  font-size: 16px;
+  text-align: center;
+  display: block;
+}
+main .pizarra .dashboard .target-siceu .boton-target {
+  display: flex;
+  justify-content: center;
+}
+main .pizarra .dashboard .target-siceu .boton-target a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  background: #2c65f3;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+main .pizarra .dashboard .target-horario {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 20px;
+  background: linear-gradient(rgba(0, 132, 255, 0.3764705882), rgba(0, 132, 255, 0.3764705882)), url(../img/backgrounds/horario.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+main .pizarra .dashboard .target-horario .texto-target h3 {
+  font-size: 50px;
+  text-align: center;
+}
+main .pizarra .dashboard .target-horario .texto-target span {
+  font-size: 16px;
+  text-align: center;
+  display: block;
+}
+main .pizarra .dashboard .target-horario .boton-target {
+  display: flex;
+  justify-content: center;
+}
+main .pizarra .dashboard .target-horario .boton-target a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  background: #0084ff;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
 }
 
 .footer {
