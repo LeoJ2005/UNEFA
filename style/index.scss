@@ -654,6 +654,66 @@ main {
 
     }
 
+    .heroes{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        font-family: Nunito, Arial, Helvetica, sans-serif;
+        margin: 50px 0px;
+        
+        
+        .tarjeta{
+            width: calc(100% / 7);
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            align-items: center;
+
+            h3{
+                text-align: center;
+            }
+
+            p{
+                text-align: center;
+                width: 80%;
+            }
+
+            a{
+                text-decoration: none;
+                padding: 5px 10px;
+                margin-top: 10px;
+                border-radius: 5px;
+                background-color: #1e88e5;
+                color: #ffffff;
+                transition: all 0.4s ease;
+                
+                &:hover{
+                    padding: 5px 30px;
+                    letter-spacing: 2px;
+                    background-color: #155fa0;
+                }
+            
+            }
+        }
+    
+    @media (max-width: 1000px) {
+        flex-flow: row wrap;
+        
+        .tarjeta{
+            width: calc(100% / 4);
+        }
+    }
+    
+    @media (max-width: 768px) {
+        flex-flow: row wrap;
+        
+        .tarjeta{
+            margin-top: 20px;
+            width: calc(100% / 2);
+        }
+    }
+    
+    }
 }
 
 /// Pie de página
@@ -758,7 +818,6 @@ main {
         border-top: 1px solid rgba(255,255,255,0.1);
         margin-top: 20px;
     }
-    
     
     @media (max-width: 767px) {
         .footer-col {

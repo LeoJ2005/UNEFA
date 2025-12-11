@@ -1,0 +1,44 @@
+.dashboard {
+  display: flex;
+  flex-flow: row wrap;
+}
+.dashboard .opcion {
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+}
+.dashboard .opcion input {
+  margin: 5px 20px 30px 0;
+  border: solid 3px #bdbdbd;
+  border-radius: 10px;
+  padding: 1rem;
+  height: 1rem;
+  width: auto;
+  font-size: 20px;
+}
+.dashboard .opcion input[type=text]:focus {
+  border: 3px solid rgba(18, 105, 181, 0.8705882353);
+  outline: none;
+}
+.dashboard .b {
+  width: 100%;
+}
+.dashboard button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 16px;
+  background: linear-gradient(45deg, rgba(7, 100, 182, 0.8705882353), rgba(45, 153, 248, 0.8705882353));
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  width: -moz-max-content;
+  width: max-content;
+}
+.dashboard button[disabled] {
+  background: linear-gradient(45deg, rgba(42, 42, 43, 0.8705882353), rgba(40, 40, 41, 0.8705882353));
+}/*# sourceMappingURL=mis_datos.css.map */

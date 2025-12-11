@@ -524,6 +524,58 @@ main .libreria .solid:hover, main .libreria .border:hover {
     justify-content: center;
   }
 }
+main .heroes {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+  margin: 50px 0px;
+}
+main .heroes .tarjeta {
+  width: 14.2857142857%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main .heroes .tarjeta h3 {
+  text-align: center;
+}
+main .heroes .tarjeta p {
+  text-align: center;
+  width: 80%;
+}
+main .heroes .tarjeta a {
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #1e88e5;
+  color: #ffffff;
+  transition: all 0.4s ease;
+}
+main .heroes .tarjeta a:hover {
+  padding: 5px 30px;
+  letter-spacing: 2px;
+  background-color: #155fa0;
+}
+@media (max-width: 1000px) {
+  main .heroes {
+    flex-flow: row wrap;
+  }
+  main .heroes .tarjeta {
+    width: 25%;
+  }
+}
+@media (max-width: 768px) {
+  main .heroes {
+    flex-flow: row wrap;
+  }
+  main .heroes .tarjeta {
+    margin-top: 20px;
+    width: 50%;
+  }
+}
 
 .footer {
   background-color: #24262b;

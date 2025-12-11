@@ -1,0 +1,54 @@
+.dashboard{
+    display: flex;
+    flex-flow: row wrap;
+
+    .opcion{
+        width: 50%;
+        display: flex;
+        flex-flow: column wrap;
+
+        input{
+            margin: 5px 20px 30px 0;
+            border: solid 3px #bdbdbd;
+            border-radius: 10px;
+            padding: 1rem;
+            height: 1rem;
+            width: auto;
+            font-size: 20px;
+            
+        }
+
+        input[type="text"]:focus {
+            border: 3px solid #1269b5de;
+            outline: none;
+        }
+    }
+    
+    .b{
+        width: 100%;
+    }
+
+    button{
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+        border-radius: 12px;
+        font-size: 16px;
+        background: linear-gradient(45deg, #0764b6de, #2d99f8de);
+        font-weight: 600;
+        color: #ffffff;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        text-align: center;
+        font-size: 20px;
+        text-decoration: none;
+        width: max-content;
+    }
+
+    button[disabled]{
+        background: linear-gradient(45deg, #2a2a2bde, #282829de);
+    }
+
+
+
+
+}
